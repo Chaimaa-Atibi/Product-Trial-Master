@@ -16,5 +16,5 @@ The chosen business cases of our solution are as follows:
 
 And here is an Example of adaptation with Power BI: Business Case N° 2 
 
-=> First Page : Outliers’ detection in Net Amount data using the unsupervised machine learning algorithm One-Class Support Vector Machine (SVM) 
-=> Second Page : Net Amount forecasting using Exponential smoothing model with Python and Power BI 
+- First Page : Outliers’ detection in Net Amount data using the unsupervised machine learning algorithm One-Class Support Vector Machine (SVM) 
+- Second Page : Net Amount forecasting using Exponential smoothing model with Python and Power BI 
