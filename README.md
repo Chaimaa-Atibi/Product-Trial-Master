@@ -1,7 +1,5 @@
 # Data-Lake-ML-DEMO
 
-Chosen business cases for the POC :
-
 To illustrate the benefits of data lakes for data science projects, we’ll do a simple demo of ML cash-flow forecasting service tested on different business cases with FBTI and Loan IQ activities of a given customer. 
 
 The chosen business cases of our solution are as follows: 
