@@ -1,20 +1,38 @@
-# Data-Lake-ML-DEMO
+# Product Trial Master
+Ce projet consiste en le développement d’un back-end pour la gestion de produits en utilisant Java/Spring Boot.
 
-To illustrate the benefits of data lakes for data science projects, we’ll do a simple demo of ML cash-flow forecasting service tested on different business cases with FBTI and Loan IQ activities of a given customer. 
+# Description
+Le back-end permet de gérer des produits avec plusieurs endpoints d'API pour la création, la récupération, la mise à jour et la suppression de produits.
 
-The chosen business cases of our solution are as follows: 
+# API Endpoints
 
-- Negative flows of Trade activity for purchases of goods (data related to the Import letters of credit), and positive on the Lending side for the release of initial funds (amount credited to the borrower). 
+| Resource           | POST                  | GET                            | PATCH                                    | PUT | DELETE           |
+| ------------------ | --------------------- | ------------------------------ | ---------------------------------------- | --- | ---------------- |
+| **/products**      | Create a new product  | Retrieve all products          | X                                        | X   |     X            |
+| **/products/:id**  | X                     | Retrieve details for product 1 | Update details of product 1 if it exists | X   | Remove product 1 |
 
-- Positive flows of Trade activity for sales of goods (data related to the Export letters of credit), and negative flows on the Lending side for the repayment of capital (debit from borrower account). 
+# Structure du Produit
+Un produit contient les attributs suivants :
 
-- Flow of charges and interest on the Trade side (Import) and capital repayment on the Lending side. 
-
-- Income flows on the Trade side (Export) and initial release of funds on the Lending side. 
-
-- All flows of both activities, except financial charges. 
-
-And here is an Example of adaptation with Power BI: Business Case N° 2 
-
-- First Page : Outliers’ detection in Net Amount data using the unsupervised machine learning algorithm One-Class Support Vector Machine (SVM) 
-- Second Page : Net Amount forecasting using Exponential smoothing model with Python and Power BI 
+``` typescript
+class Product {
+  id: number;
+  code: string;
+  name: string;
+  description: string;
+  image: string;
+  category: string;
+  price: number;
+  quantity: number;
+  internalReference: string;
+  shellId: number;
+  inventoryStatus: "INSTOCK" | "LOWSTOCK" | "OUTOFSTOCK";
+  rating: number;
+  createdAt: number;
+  updatedAt: number;
+}
+```
+# Prérequis
+- Java 8
+- Maven
+- Spring Boot
