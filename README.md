@@ -39,7 +39,7 @@ class Product {
 
 # Installation
 - Clonez le dépôt :
-git clone https://github.com/votreutilisateur/product_trial_master.git
+git clone https://github.com/Chaimaa-Atibi/Product-Trial-Master.git
 
 - Naviguez dans le répertoire du projet :
 cd product_trial_master
