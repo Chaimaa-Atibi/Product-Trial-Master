@@ -36,3 +36,13 @@ class Product {
 - Java 8
 - Maven
 - Spring Boot
+
+# Installation
+- Clonez le dépôt :
+git clone https://github.com/votreutilisateur/product_trial_master.git
+
+- Naviguez dans le répertoire du projet :
+cd product_trial_master
+
+- Compilez le projet :
+mvn clean install
